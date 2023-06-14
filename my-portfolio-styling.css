@@ -1,0 +1,893 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*my header and navbar styling starts here*/
+header{
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+	background-color: #dadedf;
+	height: 100px;
+	width: 100%;
+	z-index: 12;
+}
+
+.nav-links > li > a{
+	font-family: "Geologica";
+	font-weight: 800px;
+	font-size: 26px;
+	padding-right: 20px;
+	color: grey;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+
+.nav-links > li > a:hover{
+	color: orange;
+	text-decoration: underline;
+}
+
+.nav-links li{
+	list-style: none;
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav-button button{
+	font-family: "Geologica";
+	font-weight: 500;
+	font-size: 26px;
+	color: #cccccc;
+	text-decoration: none;
+	cursor: pointer;
+	border: none;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+	background-color: #242424;
+	padding: 2px 10px;
+}
+
+.nav-button button:hover{
+	background-color: white;
+	color: black;
+	text-decoration: underline;
+}
+/*my header and navbar styling ends here*/
+
+/*my hero section styling starts here*/
+
+.hero-image{
+	background-image: linear-gradient(
+	rgba(0,0,0,0.7), 
+	rgba(0,0,0,0.7)), 
+	url("my-picture.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 900px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-text h1{
+	position: relative;
+	bottom: 200px;
+	right: 350px;
+	color: white;
+	font-size: 60px;
+	font-weight: 800px;
+}
+
+.hero-text h1:hover{
+	color: orange;
+}
+
+.hero-text h2{
+	position: relative;
+	bottom: 80px;
+	color: white;
+	font-size: 45px;
+	font-weight: 800px;
+}
+
+.hero-text h2:hover{
+	color: orange;
+}
+
+.hero-text p{
+	position: relative;
+	/*left: 0px;*/
+	font-size: 20px;
+	color: white;
+	border-bottom: 2px solid orange;
+	padding-bottom: 5px;
+}
+
+.hero-text p:hover{
+	color: orange;
+}
+/*my hero section styling ends here*/
+
+
+/*my about section styling starts here*/
+.about-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 1000px;
+	background-color: white;
+}
+
+.about-container > .about-image > .my-image{
+	height: 700px;
+	float: left;
+	border: 3px solid orange;
+	border-radius: 10px;
+	margin-left: -170px;
+	box-shadow: -5px -5px 5px orange;
+}
+
+.about-container > .about-text > .about{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 200px;
+	line-height: 80px;
+}
+
+.about-container > .about-text > .about > .p{
+	position: relative;
+	left: 15px;
+}
+
+.about-container > .about-text > .about > .p > p > a[href]{
+	color: black;
+	text-decoration: none;
+}
+
+.about-container > .about-text h2{
+	position: relative;
+	left: 10px;
+	bottom: 70px;
+	font-size: 80px;
+	margin-left: 210px;
+}
+
+.about-container > .about-text > a[href] button{
+	position: relative;
+	left: 25px;
+	top: 150px;
+	margin-left: 200px;
+	cursor: pointer;
+	border: none;
+	border-radius: 50px;
+	background-color: orange;
+	padding: 2px 10px;
+	font-size: 20px;
+}
+
+.about-container > .about-text > a[href] button:hover{
+	color: #373d3f;
+	background-color: #d4d4d4;
+}
+/*my about section styling ends here*/
+
+/*my hobbies section starts here*/
+.hobbies{
+	display: flex;
+	justify-content: center;
+	background: white;
+	height: 500px; 
+	margin-top: 30px;
+}
+
+.hobbies > .hob{
+	border: solid gray;
+	margin: 15px;
+	background: lightgray;
+	text-align: center;
+	box-shadow: 10px 10px 5px gray;
+	border-radius: 50px;
+}
+
+.hobbies > .hob p{
+	color: black;
+	margin-top: 100px;
+}
+
+.hobbies > .hob a[href]{
+	position: relative;
+	top: 150px;
+	cursor: pointer;
+	border: none;
+	border-radius: 50px;
+	background-color: #474747;
+	font-size: 20px;
+	padding: 2px 10px;
+	color: black;
+	text-decoration: none;
+}
+
+.hobbies > .hob i{
+	font-size: 100px;
+}
+
+/*my hobbies section ends here*/
+
+/*my resume section starts here*/
+.resume{
+	background-color: black;
+	height: 750px;
+	margin: 50px;
+	border-radius: 30px;
+}
+
+.resume h2{
+	color: white;
+	padding-left: 600px;
+	padding-top: 50px;
+	border-bottom: 2px solid white;
+	font-size: 50px;
+}
+
+.resume2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	margin: 300px;
+	position: relative;
+	bottom: 100px;
+	border-radius: 30px;
+}
+
+.resume2 .education{
+	border: solid gray;
+	margin: 15px;
+	background: lightgray;
+	text-align: center;
+	box-shadow: 10px 10px 5px gray;
+	height: 300px
+}
+
+.resume2 .education h3{
+	margin-top: 100px;
+}
+
+.resume2 .education i{
+	font-size: 100px;
+}
+/*my resume section starts here*/
+
+/*my progress bar section starts here*/
+.progress-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.progress{
+	/*display: flex;*/
+	margin: 50px;
+	width: 300px;
+	height: 500px;
+	background-color: #d4d4d4;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.progress .outer{
+	margin: 70px;
+	height: 160px;
+	width: 160px;
+	padding: 20px;
+	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+	-6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+	border-radius: 50%;
+}
+
+.progress .inner{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 120px;
+	width: 120px;
+	box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), -4px -4px 6px -1px rgba(255, 255, 255, 0.7);
+	border-radius: 50%;
+}
+
+.progress .number{
+	font-weight: 600;
+	color: green;
+}
+
+.progress h2{
+	padding-left: 110px;
+}
+
+circle{
+	fill: none;
+	stroke: url(#GradientColor);
+	stroke-width: 19px;
+	stroke-dasharray: 500px;
+	stroke-dashoffset: 500px;
+	animation: anim 2s linear forwards;
+}
+
+@keyframes anim{
+	100%{
+		stroke-dashoffset: 200px;
+	}
+}
+
+svg{
+	position: absolute;
+	left: 70px;
+	top: 98px;
+}
+
+.progress2{
+	/*display: flex;*/
+	margin: 50px;
+	width: 300px;
+	height: 500px;
+	background-color: #d4d4d4;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.progress2 .outer2{
+	margin: 70px;
+	height: 160px;
+	width: 160px;
+	padding: 20px;
+	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+	-6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+	border-radius: 50%;
+}
+
+.progress2 .inner2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 120px;
+	width: 120px;
+	box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), -4px -4px 6px -1px rgba(255, 255, 255, 0.7);
+	border-radius: 50%;
+}
+
+.progress2 .number2{
+	font-weight: 600;
+	color: green;
+}
+
+.progress2 h2{
+	padding-left: 85px;
+}
+
+.circle2{
+	fill: none;
+	stroke: url(#GradientColor);
+	stroke-width: 19px;
+	stroke-dasharray: 450px;
+	stroke-dashoffset: 450px;
+	animation: anim 2s linear forwards;
+}
+
+@keyframes anim{
+	100%{
+		stroke-dashoffset: 5px;
+	}
+}
+
+.svg2{
+	position: absolute;
+	left: 70px;
+	top: 98px;
+}
+
+.progress3{
+	/*display: flex;*/
+	margin: 50px;
+	width: 300px;
+	height: 500px;
+	background-color: #d4d4d4;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.progress3 .outer3{
+	margin: 70px;
+	height: 160px;
+	width: 160px;
+	padding: 20px;
+	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+	-6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+	border-radius: 50%;
+}
+
+.progress3 .inner3{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 120px;
+	width: 120px;
+	box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), -4px -4px 6px -1px rgba(255, 255, 255, 0.7);
+	border-radius: 50%;
+}
+
+.progress3 .number3{
+	font-weight: 600;
+	color: green;
+}
+
+.progress3 h2{
+	padding-left: 95px;
+}
+
+.circle3{
+	fill: none;
+	stroke: url(#GradientColor);
+	stroke-width: 19px;
+	stroke-dasharray: 450px;
+	stroke-dashoffset: 450px;
+	animation: anim 2s linear forwards;
+}
+
+@keyframes anim{
+	100%{
+		stroke-dashoffset: 175.5px;
+	}
+}
+
+.svg3{
+	position: absolute;
+	left: 70px;
+	top: 98px;
+}
+/*my progress bar section ends here*/
+
+/*my contact page styling starts here*/
+.contact-page{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+	background-color: #322d31;
+}
+
+.contact-page > .contact-me{
+	margin: 30px;
+}
+
+.contact-page > .contact-me h2{
+	position: relative;
+	bottom: 50px;
+	font-size: 50px;
+	left: 30px;
+	color: white;
+}
+
+.contact-page > .contact-me h3{
+	position: relative;
+	bottom: 40px;
+	font-size: 20px;
+	left: 70px;
+	color: white;
+}
+
+.contact-page > .contact-me > form > label > input{
+	position: relative;
+	left: 20px;
+	text-align: center;
+	margin: 30px;
+	border: none;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.contact-page > .contact-me p{
+	position: relative;
+	right: 85px;
+	bottom: 10px;
+	color: white;
+	text-align: center;
+}
+
+.contact-page > .contact-me textarea{
+	border: none;
+	border-radius: 40px;
+}
+
+.contact-page > .contact-me button{
+	position: relative;
+	top: 30px;
+	right: 350px;
+	border: none;
+	border-radius: 20px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.contact-page > .contact-image > .my-contact-image{
+	height: 400px;
+	float: right;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+/*my contact page styling ends here*/
+
+/*my footer section styling starts here*/
+footer{
+	position: relative;
+	height: 600px;
+	background-color: #171717;
+}
+
+footer > .col1 h3{
+	position: relative;
+	top: 70px;
+	color: orange;
+	font-size: 40px;
+}
+
+footer > .col1 a[href]{
+	position: relative;
+	top: 80px;
+	color: orange;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+footer > .col1  > .socials{
+	position: relative;
+	top: 100px;
+}
+
+footer > .col1  > .socials i{
+	position: relative;
+	margin: 10px;
+	cursor: pointer;
+	color: orange;
+	font-size: 20px;
+}
+
+footer > iframe{
+	position: relative;
+	left: 700px;
+	height: 300px;
+	width: 500px;
+}
+
+.col2{
+	position: relative;
+	top: 120px;
+	margin: 30px;
+}
+
+.col3{
+	position: relative;
+	top: 100px;
+	color: orange;
+}
+/*my footer section styling ends here*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*this is the start of my media query*/
+/*yhis is my media query for screens that are 1285.60px or less*/
+@media screen and (max-width: 1285.60px) {
+ 	.hero-text h1{
+ 		margin-left: 25px;
+ 	}
+
+ 	.about-container > .about-image > .my-image{
+		margin-left: -140px;
+	}
+
+	.resume h2{
+	padding-left: 465px;
+	}
+}
+
+/* this is my media query for screens that are 1080px or less*/
+@media screen and (max-width: 1080px) {
+	.hero-text h1{
+ 		margin-left: 130px;
+ 	}
+
+ 	.about-container > .about-image > .my-image{
+		margin-left: -10px;
+		height: 600px;
+	}
+
+	.resume h2{
+		padding-left: 385px;
+	}
+
+	.resume2{
+		width: 600px;
+		position: relative;
+		right: 100px;
+	}
+
+	.progress{
+		margin: 20px;
+	}
+
+	.contact-page{
+		height: 600px;
+	}
+
+	.contact-page > .contact-me h2{
+		position: relative;
+		left: 50px;
+	}
+
+	.contact-page > .contact-me h3{
+		position: relative;
+		left: 90px;
+	}
+
+	.contact-page > .contact-me p{
+		position: relative;
+		right: 55px;
+	}
+
+	.contact-page > .contact-me button{
+		position: relative;
+		top: 20px;
+		left: 180px;
+	}
+
+	/*footer > .col1 h3{
+		position: relative;
+		left: 10px;
+	}
+
+	footer > .col1 a[href]{
+		position: relative;
+		left: 10px;
+	
+	}*/
+
+ 	footer > iframe{
+		position: relative;
+		left: 450px;
+	}
+}
+
+/*On screens that are 768px or less*/
+ @media screen and (max-width: 768px){
+ 	.nav-links > li > a{
+	font-size: 15px;
+	}
+
+	header{
+		height: 50px;
+	}
+
+	.hero-image{
+		height: 800px;
+	}
+
+	.hero-text h1{
+		position: relative;
+		right: 180px;
+		font-size: 50px;
+	}
+
+	.hero-text h2{
+	position: relative;
+	left: 30px;
+	font-size: 35px;
+	}
+
+	.hero-text p{
+		font-size: 20px;
+	}
+
+	.about-container > .about-image > .my-image{
+		height: 500px;
+		width: 300px;
+		margin-left: 10px;
+	}
+
+	.about-container{
+		height: 800px;
+	}
+
+	.about-container > .about-text > .about{
+		margin-left: 80px;
+		line-height: 80px;
+	}
+
+	.about-container > .about-text h2{
+		position: relative;
+		left: -80px;
+		font-size: 40px;
+		margin-left: 210px;
+	}
+
+	.about-container > .about-text > a[href] button{
+		position: relative;
+		left: -75px;
+		top: 60px;
+		margin-left: 200px;
+		padding: 2px 10px;
+		font-size: 15px;
+	}
+
+	.hobbies{
+		height: 400px; 
+		margin: 30px;
+	}
+
+	.hobbies > .hob a[href]{
+		position: relative;
+		top: 20px;
+		font-size: 15px;
+	}
+
+	.hobbies > .hob i{
+		font-size: 90px;
+	}
+
+	.resume{
+		height: 600px;
+	}
+
+	.resume h2{
+		padding-left: 210px;
+	}
+
+	.resume2{
+		position: relative;
+		bottom: 200px;
+		right: 220px;
+		width: 500px;
+	}
+
+	.progress-container{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact-page > .contact-me{
+		margin: 10px;
+	}
+
+	.contact-page > .contact-me h2{
+		position: relative;
+		font-size: 30px;
+		left: 30px;
+	}
+
+	.contact-page > .contact-me h3{
+		position: relative;
+		font-size: 15px;
+		left: 30px;
+	}
+
+	.contact-page > .contact-me > form > label > input{
+		position: relative;
+		left: 40px;
+		margin: 10px;
+		border-radius: 20px;
+		padding: 10px;
+	}
+
+	.contact-page > .contact-me p{
+		position: relative;
+		right: 20px;
+	}
+
+	.contact-page > .contact-me textarea{
+		position: relative;
+		left: 20px;
+		width: 250px;
+		border-width: 50px;
+		border-radius: 20px;
+	}
+
+	.contact-page > .contact-me button{
+		position: relative;
+		left: 80px;
+		padding: 5px;
+	}
+
+	.contact-page > .contact-image > .my-contact-image{
+		position: relative;
+		right: 10px;
+		height: 400px;
+		float: right;
+		border-radius: 50px;
+		cursor: pointer;
+	}
+
+	footer > iframe{
+		position: relative;
+		left: 400px;
+		width: 300px;
+	}
+	
+ }
+
+
+
+
+ /*/*On screens that are 992px or less*/
+/* @media screen and (max-width: 992px) {
+	.hero-text h1{
+ 		margin-left: 200px;
+ 	}
+
+ 	.about-container > .about-image > .my-image{
+		margin-left: 70px;
+		height: 600px;
+	}
+
+	.about-container > .about-text > .about{
+		margin-left: 80px;
+	}
+
+	.about-container > .about-text h2{
+		position: relative;
+		left: -100px;
+		font-size: 40px;
+	}
+
+	.about-container > .about-text > a[href] button{
+		position: relative;
+		left: -35px;
+		top: 100px;
+	}
+
+	.hobbies{
+		display: flex;
+		justify-content: center;
+		margin: 20px;
+	}
+
+	.resume h2{
+		padding-left: 325px;
+	}
+
+	.resume2{
+	margin: 250px;
+	}
+
+	.progress-container{
+		background-color: black;
+		margin-left: 200px;
+	}
+
+ }*/
